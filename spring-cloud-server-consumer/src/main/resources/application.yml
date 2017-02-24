@@ -1,0 +1,4 @@
+server.port: 9091
+eureka.instance.appname: service.consumer
+eureka.client.serviceUrl.defaultZone: http://10.195.225.39:8762/eureka/,http://10.195.225.39:8761/eureka/
+

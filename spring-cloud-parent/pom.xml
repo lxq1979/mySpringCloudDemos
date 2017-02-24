@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.xiaoqiao.springcloud</groupId>
+	<artifactId>spring-cloud-parent</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>spring-cloud-parent</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<spring-cloud-config-server.version>1.0-SNAPSHOT</spring-cloud-config-server.version>
+		<spring-cloud-eureka-server.version>1.1-SNAPSHOT</spring-cloud-eureka-server.version>
+		<spring-cloud-facade.version>1.0-SNAPSHOT</spring-cloud-facade.version>
+		<spring-cloud-server-provider.version>1.0-SNAPSHOT</spring-cloud-server-provider.version>
+		<spring-cloud-server-consumer.version>1.0-SNAPSHOT</spring-cloud-server-consumer.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>		
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>fastjson</artifactId>
+				<version>1.1.39</version>
+			</dependency>
+
+			<dependency>
+				<groupId>javax.transaction</groupId>
+				<artifactId>jta</artifactId>
+				<version>1.1</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.persistence</groupId>
+				<artifactId>persistence-api</artifactId>
+				<version>1.0</version>
+			</dependency>
+			<dependency>
+				<groupId>javax</groupId>
+				<artifactId>javaee-api</artifactId>
+				<version>6.0</version>
+				<scope>provided</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>
